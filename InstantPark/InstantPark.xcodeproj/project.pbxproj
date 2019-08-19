@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBE799EF2307D6CC00DE2236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */; };
+		FBE799F12307D6CC00DE2236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */; };
+		FBE799F32307D6CC00DE2236 /* Susi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799F22307D6CC00DE2236 /* Susi.swift */; };
+		FBE799F52307D6CF00DE2236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE799F42307D6CF00DE2236 /* Assets.xcassets */; };
+		FBE799F82307D6CF00DE2236 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE799F72307D6CF00DE2236 /* Preview Assets.xcassets */; };
+		FBE799FB2307D6CF00DE2236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE799F92307D6CF00DE2236 /* LaunchScreen.storyboard */; };
+		FBE79A062307D6CF00DE2236 /* InstantParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A052307D6CF00DE2236 /* InstantParkTests.swift */; };
+		FBE79A112307D6CF00DE2236 /* InstantParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A102307D6CF00DE2236 /* InstantParkUITests.swift */; };
+		FBE79A1F2307E65D00DE2236 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A1E2307E65D00DE2236 /* Logo.swift */; };
+		FBE79A222308D4B100DE2236 /* Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A212308D4B100DE2236 /* Su.swift */; };
+		FBE79A242308D89100DE2236 /* Si.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A232308D89100DE2236 /* Si.swift */; };
+		FBE79A272309306A00DE2236 /* RouterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A262309306A00DE2236 /* RouterData.swift */; };
+		FBE79A29230939EC00DE2236 /* SusiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A28230939EC00DE2236 /* SusiContainer.swift */; };
+		FBE79A2E2309678B00DE2236 /* SusiEventReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */; };
+		FBE79A302309FA0A00DE2236 /* SusiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBE79A022307D6CF00DE2236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE799E32307D6CC00DE2236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE799EA2307D6CC00DE2236;
+			remoteInfo = InstantPark;
+		};
+		FBE79A0D2307D6CF00DE2236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE799E32307D6CC00DE2236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE799EA2307D6CC00DE2236;
+			remoteInfo = InstantPark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBE799EB2307D6CC00DE2236 /* InstantPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBE799F22307D6CC00DE2236 /* Susi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Susi.swift; sourceTree = "<group>"; };
+		FBE799F42307D6CF00DE2236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE799F72307D6CF00DE2236 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBE799FA2307D6CF00DE2236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBE799FC2307D6CF00DE2236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE79A012307D6CF00DE2236 /* InstantParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE79A052307D6CF00DE2236 /* InstantParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantParkTests.swift; sourceTree = "<group>"; };
+		FBE79A072307D6CF00DE2236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE79A0C2307D6CF00DE2236 /* InstantParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE79A102307D6CF00DE2236 /* InstantParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantParkUITests.swift; sourceTree = "<group>"; };
+		FBE79A122307D6CF00DE2236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE79A1E2307E65D00DE2236 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		FBE79A212308D4B100DE2236 /* Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Su.swift; sourceTree = "<group>"; };
+		FBE79A232308D89100DE2236 /* Si.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Si.swift; sourceTree = "<group>"; };
+		FBE79A262309306A00DE2236 /* RouterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterData.swift; sourceTree = "<group>"; };
+		FBE79A28230939EC00DE2236 /* SusiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiContainer.swift; sourceTree = "<group>"; };
+		FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiEventReducer.swift; sourceTree = "<group>"; };
+		FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiEvent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBE799E82307D6CC00DE2236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE799FE2307D6CF00DE2236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE79A092307D6CF00DE2236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBE799E22307D6CC00DE2236 = {
+			isa = PBXGroup;
+			children = (
+				FBE799ED2307D6CC00DE2236 /* InstantPark */,
+				FBE79A042307D6CF00DE2236 /* InstantParkTests */,
+				FBE79A0F2307D6CF00DE2236 /* InstantParkUITests */,
+				FBE799EC2307D6CC00DE2236 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBE799EC2307D6CC00DE2236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE799EB2307D6CC00DE2236 /* InstantPark.app */,
+				FBE79A012307D6CF00DE2236 /* InstantParkTests.xctest */,
+				FBE79A0C2307D6CF00DE2236 /* InstantParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE799ED2307D6CC00DE2236 /* InstantPark */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A202307E6C900DE2236 /* Susi */,
+				FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */,
+				FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */,
+				FBE799F42307D6CF00DE2236 /* Assets.xcassets */,
+				FBE799F92307D6CF00DE2236 /* LaunchScreen.storyboard */,
+				FBE799FC2307D6CF00DE2236 /* Info.plist */,
+				FBE799F62307D6CF00DE2236 /* Preview Content */,
+			);
+			path = InstantPark;
+			sourceTree = "<group>";
+		};
+		FBE799F62307D6CF00DE2236 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBE799F72307D6CF00DE2236 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBE79A042307D6CF00DE2236 /* InstantParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A052307D6CF00DE2236 /* InstantParkTests.swift */,
+				FBE79A072307D6CF00DE2236 /* Info.plist */,
+			);
+			path = InstantParkTests;
+			sourceTree = "<group>";
+		};
+		FBE79A0F2307D6CF00DE2236 /* InstantParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A102307D6CF00DE2236 /* InstantParkUITests.swift */,
+				FBE79A122307D6CF00DE2236 /* Info.plist */,
+			);
+			path = InstantParkUITests;
+			sourceTree = "<group>";
+		};
+		FBE79A202307E6C900DE2236 /* Susi */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A2C2309675300DE2236 /* Views */,
+				FBE79A2B2309673600DE2236 /* Observables */,
+				FBE79A2A230966DF00DE2236 /* Events */,
+			);
+			path = Susi;
+			sourceTree = "<group>";
+		};
+		FBE79A2A230966DF00DE2236 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */,
+				FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		FBE79A2B2309673600DE2236 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A262309306A00DE2236 /* RouterData.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		FBE79A2C2309675300DE2236 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBE799F22307D6CC00DE2236 /* Susi.swift */,
+				FBE79A232308D89100DE2236 /* Si.swift */,
+				FBE79A212308D4B100DE2236 /* Su.swift */,
+				FBE79A28230939EC00DE2236 /* SusiContainer.swift */,
+				FBE79A1E2307E65D00DE2236 /* Logo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBE799EA2307D6CC00DE2236 /* InstantPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE79A152307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantPark" */;
+			buildPhases = (
+				FBE799E72307D6CC00DE2236 /* Sources */,
+				FBE799E82307D6CC00DE2236 /* Frameworks */,
+				FBE799E92307D6CC00DE2236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstantPark;
+			productName = InstantPark;
+			productReference = FBE799EB2307D6CC00DE2236 /* InstantPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBE79A002307D6CF00DE2236 /* InstantParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE79A182307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantParkTests" */;
+			buildPhases = (
+				FBE799FD2307D6CF00DE2236 /* Sources */,
+				FBE799FE2307D6CF00DE2236 /* Frameworks */,
+				FBE799FF2307D6CF00DE2236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE79A032307D6CF00DE2236 /* PBXTargetDependency */,
+			);
+			name = InstantParkTests;
+			productName = InstantParkTests;
+			productReference = FBE79A012307D6CF00DE2236 /* InstantParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBE79A0B2307D6CF00DE2236 /* InstantParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE79A1B2307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantParkUITests" */;
+			buildPhases = (
+				FBE79A082307D6CF00DE2236 /* Sources */,
+				FBE79A092307D6CF00DE2236 /* Frameworks */,
+				FBE79A0A2307D6CF00DE2236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE79A0E2307D6CF00DE2236 /* PBXTargetDependency */,
+			);
+			name = InstantParkUITests;
+			productName = InstantParkUITests;
+			productReference = FBE79A0C2307D6CF00DE2236 /* InstantParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBE799E32307D6CC00DE2236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Yini Yin";
+				TargetAttributes = {
+					FBE799EA2307D6CC00DE2236 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					FBE79A002307D6CF00DE2236 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = FBE799EA2307D6CC00DE2236;
+					};
+					FBE79A0B2307D6CF00DE2236 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = FBE799EA2307D6CC00DE2236;
+					};
+				};
+			};
+			buildConfigurationList = FBE799E62307D6CC00DE2236 /* Build configuration list for PBXProject "InstantPark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBE799E22307D6CC00DE2236;
+			productRefGroup = FBE799EC2307D6CC00DE2236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBE799EA2307D6CC00DE2236 /* InstantPark */,
+				FBE79A002307D6CF00DE2236 /* InstantParkTests */,
+				FBE79A0B2307D6CF00DE2236 /* InstantParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBE799E92307D6CC00DE2236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE799FB2307D6CF00DE2236 /* LaunchScreen.storyboard in Resources */,
+				FBE799F82307D6CF00DE2236 /* Preview Assets.xcassets in Resources */,
+				FBE799F52307D6CF00DE2236 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE799FF2307D6CF00DE2236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE79A0A2307D6CF00DE2236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBE799E72307D6CC00DE2236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE799EF2307D6CC00DE2236 /* AppDelegate.swift in Sources */,
+				FBE79A272309306A00DE2236 /* RouterData.swift in Sources */,
+				FBE799F12307D6CC00DE2236 /* SceneDelegate.swift in Sources */,
+				FBE79A1F2307E65D00DE2236 /* Logo.swift in Sources */,
+				FBE79A29230939EC00DE2236 /* SusiContainer.swift in Sources */,
+				FBE79A222308D4B100DE2236 /* Su.swift in Sources */,
+				FBE799F32307D6CC00DE2236 /* Susi.swift in Sources */,
+				FBE79A2E2309678B00DE2236 /* SusiEventReducer.swift in Sources */,
+				FBE79A302309FA0A00DE2236 /* SusiEvent.swift in Sources */,
+				FBE79A242308D89100DE2236 /* Si.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE799FD2307D6CF00DE2236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE79A062307D6CF00DE2236 /* InstantParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE79A082307D6CF00DE2236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE79A112307D6CF00DE2236 /* InstantParkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBE79A032307D6CF00DE2236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE799EA2307D6CC00DE2236 /* InstantPark */;
+			targetProxy = FBE79A022307D6CF00DE2236 /* PBXContainerItemProxy */;
+		};
+		FBE79A0E2307D6CF00DE2236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE799EA2307D6CC00DE2236 /* InstantPark */;
+			targetProxy = FBE79A0D2307D6CF00DE2236 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBE799F92307D6CF00DE2236 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBE799FA2307D6CF00DE2236 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBE79A132307D6CF00DE2236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBE79A142307D6CF00DE2236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBE79A162307D6CF00DE2236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "InstantPark/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InstantPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantPark";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBE79A172307D6CF00DE2236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "InstantPark/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InstantPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantPark";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBE79A192307D6CF00DE2236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InstantParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantParkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstantPark.app/InstantPark";
+			};
+			name = Debug;
+		};
+		FBE79A1A2307D6CF00DE2236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InstantParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantParkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstantPark.app/InstantPark";
+			};
+			name = Release;
+		};
+		FBE79A1C2307D6CF00DE2236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InstantParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantParkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstantPark;
+			};
+			name = Debug;
+		};
+		FBE79A1D2307D6CF00DE2236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InstantParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yini-Yin.InstantParkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstantPark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBE799E62307D6CC00DE2236 /* Build configuration list for PBXProject "InstantPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE79A132307D6CF00DE2236 /* Debug */,
+				FBE79A142307D6CF00DE2236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE79A152307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE79A162307D6CF00DE2236 /* Debug */,
+				FBE79A172307D6CF00DE2236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE79A182307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE79A192307D6CF00DE2236 /* Debug */,
+				FBE79A1A2307D6CF00DE2236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE79A1B2307D6CF00DE2236 /* Build configuration list for PBXNativeTarget "InstantParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE79A1C2307D6CF00DE2236 /* Debug */,
+				FBE79A1D2307D6CF00DE2236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBE799E32307D6CC00DE2236 /* Project object */;
+}
