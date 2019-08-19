@@ -36,7 +36,9 @@ struct SusiView: View {
                 Text("Have an account already?")
                     .offset(y: 230)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    self.eventReducer.dispatch(e: SusiEvent.SI, data: self.routerData)
+                }) {
                 Text("Log in")
                 }.offset(y: 230)
             }
