@@ -8,16 +8,23 @@
 
 import SwiftUI
 
-struct Su: View {
+struct SuView: View {
     var body: some View {
-        Text("Hello Su!")
+        
+        VStack {
+            TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .padding(.trailing)
+            
+            Text("Hello Su!")
+        }
+    
     }
 }
 
 #if DEBUG
-struct Su_Previews: PreviewProvider {
+struct SuView_Previews: PreviewProvider {
     static var previews: some View {
-        Su()
+        SuView()
     }
 }
 #endif

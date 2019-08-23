@@ -8,37 +8,36 @@
 
 import SwiftUI
 
-struct SusiContainer: View {
-    @EnvironmentObject var routerData: RouterData
-    
-    var body: some View {
+struct RootView: View {
+    @EnvironmentObject var appState: AppState
+
+   var body: some View {
         VStack(alignment: .center) {
             Logo()
                 .padding(.top, 50)
                 .padding(.bottom, 50)
             
-            if self.routerData.showSUSI {
+            if self.appState.susiState.showSUSI {
                 SusiView()
             }
             
-            if self.routerData.showSI {
-                Si()
+            if self.appState.susiState.showSU {
+                SuView()
             }
             
-            if self.routerData.showSU {
-                Su()
+            if self.appState.susiState.showSI {
+                SiView()
             }
-            
             Spacer()
         }
     }
 }
 
 #if DEBUG
-struct SusiContainer_Previews: PreviewProvider {
+struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        SusiContainer()
-        .environmentObject(RouterData())
+        RootView()
+        .environmentObject(AppState())
     }
 }
 #endif

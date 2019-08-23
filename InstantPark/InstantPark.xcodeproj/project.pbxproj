@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB328230230FFD50000AB9A9 /* SusiRouteEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32822F230FFD50000AB9A9 /* SusiRouteEvents.swift */; };
 		FBE799EF2307D6CC00DE2236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */; };
 		FBE799F12307D6CC00DE2236 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */; };
 		FBE799F32307D6CC00DE2236 /* Susi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE799F22307D6CC00DE2236 /* Susi.swift */; };
@@ -18,10 +19,10 @@
 		FBE79A1F2307E65D00DE2236 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A1E2307E65D00DE2236 /* Logo.swift */; };
 		FBE79A222308D4B100DE2236 /* Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A212308D4B100DE2236 /* Su.swift */; };
 		FBE79A242308D89100DE2236 /* Si.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A232308D89100DE2236 /* Si.swift */; };
-		FBE79A272309306A00DE2236 /* RouterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A262309306A00DE2236 /* RouterData.swift */; };
-		FBE79A29230939EC00DE2236 /* SusiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A28230939EC00DE2236 /* SusiContainer.swift */; };
-		FBE79A2E2309678B00DE2236 /* SusiEventReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */; };
-		FBE79A302309FA0A00DE2236 /* SusiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */; };
+		FBE79A272309306A00DE2236 /* SusiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A262309306A00DE2236 /* SusiState.swift */; };
+		FBE79A29230939EC00DE2236 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A28230939EC00DE2236 /* RootView.swift */; };
+		FBE79A2E2309678B00DE2236 /* SusiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A2D2309678B00DE2236 /* SusiController.swift */; };
+		FBE79A32230AADFF00DE2236 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE79A31230AADFF00DE2236 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB32822F230FFD50000AB9A9 /* SusiRouteEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiRouteEvents.swift; sourceTree = "<group>"; };
 		FBE799EB2307D6CC00DE2236 /* InstantPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +61,10 @@
 		FBE79A1E2307E65D00DE2236 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		FBE79A212308D4B100DE2236 /* Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Su.swift; sourceTree = "<group>"; };
 		FBE79A232308D89100DE2236 /* Si.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Si.swift; sourceTree = "<group>"; };
-		FBE79A262309306A00DE2236 /* RouterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterData.swift; sourceTree = "<group>"; };
-		FBE79A28230939EC00DE2236 /* SusiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiContainer.swift; sourceTree = "<group>"; };
-		FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiEventReducer.swift; sourceTree = "<group>"; };
-		FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiEvent.swift; sourceTree = "<group>"; };
+		FBE79A262309306A00DE2236 /* SusiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiState.swift; sourceTree = "<group>"; };
+		FBE79A28230939EC00DE2236 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FBE79A2D2309678B00DE2236 /* SusiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusiController.swift; sourceTree = "<group>"; };
+		FBE79A31230AADFF00DE2236 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB32822E230FFCA8000AB9A9 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				FB32822F230FFD50000AB9A9 /* SusiRouteEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		FBE799E22307D6CC00DE2236 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		FBE799ED2307D6CC00DE2236 /* InstantPark */ = {
 			isa = PBXGroup;
 			children = (
+				FBE79A35230AC2C100DE2236 /* App */,
 				FBE79A202307E6C900DE2236 /* Susi */,
 				FBE799EE2307D6CC00DE2236 /* AppDelegate.swift */,
 				FBE799F02307D6CC00DE2236 /* SceneDelegate.swift */,
@@ -153,28 +164,28 @@
 		FBE79A202307E6C900DE2236 /* Susi */ = {
 			isa = PBXGroup;
 			children = (
+				FB32822E230FFCA8000AB9A9 /* Events */,
 				FBE79A2C2309675300DE2236 /* Views */,
-				FBE79A2B2309673600DE2236 /* Observables */,
-				FBE79A2A230966DF00DE2236 /* Events */,
+				FBE79A2B2309673600DE2236 /* State */,
+				FBE79A2A230966DF00DE2236 /* Controller */,
 			);
 			path = Susi;
 			sourceTree = "<group>";
 		};
-		FBE79A2A230966DF00DE2236 /* Events */ = {
+		FBE79A2A230966DF00DE2236 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FBE79A2D2309678B00DE2236 /* SusiEventReducer.swift */,
-				FBE79A2F2309FA0A00DE2236 /* SusiEvent.swift */,
+				FBE79A2D2309678B00DE2236 /* SusiController.swift */,
 			);
-			path = Events;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		FBE79A2B2309673600DE2236 /* Observables */ = {
+		FBE79A2B2309673600DE2236 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				FBE79A262309306A00DE2236 /* RouterData.swift */,
+				FBE79A262309306A00DE2236 /* SusiState.swift */,
 			);
-			path = Observables;
+			path = State;
 			sourceTree = "<group>";
 		};
 		FBE79A2C2309675300DE2236 /* Views */ = {
@@ -183,10 +194,18 @@
 				FBE799F22307D6CC00DE2236 /* Susi.swift */,
 				FBE79A232308D89100DE2236 /* Si.swift */,
 				FBE79A212308D4B100DE2236 /* Su.swift */,
-				FBE79A28230939EC00DE2236 /* SusiContainer.swift */,
 				FBE79A1E2307E65D00DE2236 /* Logo.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE79A35230AC2C100DE2236 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FBE79A28230939EC00DE2236 /* RootView.swift */,
+				FBE79A31230AADFF00DE2236 /* AppState.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,14 +340,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE799EF2307D6CC00DE2236 /* AppDelegate.swift in Sources */,
-				FBE79A272309306A00DE2236 /* RouterData.swift in Sources */,
+				FBE79A272309306A00DE2236 /* SusiState.swift in Sources */,
 				FBE799F12307D6CC00DE2236 /* SceneDelegate.swift in Sources */,
 				FBE79A1F2307E65D00DE2236 /* Logo.swift in Sources */,
-				FBE79A29230939EC00DE2236 /* SusiContainer.swift in Sources */,
+				FBE79A32230AADFF00DE2236 /* AppState.swift in Sources */,
+				FBE79A29230939EC00DE2236 /* RootView.swift in Sources */,
 				FBE79A222308D4B100DE2236 /* Su.swift in Sources */,
+				FB328230230FFD50000AB9A9 /* SusiRouteEvents.swift in Sources */,
 				FBE799F32307D6CC00DE2236 /* Susi.swift in Sources */,
-				FBE79A2E2309678B00DE2236 /* SusiEventReducer.swift in Sources */,
-				FBE79A302309FA0A00DE2236 /* SusiEvent.swift in Sources */,
+				FBE79A2E2309678B00DE2236 /* SusiController.swift in Sources */,
 				FBE79A242308D89100DE2236 /* Si.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

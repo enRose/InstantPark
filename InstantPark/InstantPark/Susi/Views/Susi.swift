@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct SusiView: View {
-    @EnvironmentObject var routerData: RouterData
+    @EnvironmentObject var appState: AppState
     
-    var eventReducer: SusiEventReducer = SusiEventReducer()
+    let controller: SusiController = SusiController()
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             
             Text("Find an instant car park")
                  .font(.title)
@@ -22,10 +22,7 @@ struct SusiView: View {
              Text("at your pace, your rate")
             
              Button(action: {
-                self.eventReducer.dispatch(
-                    e: SusiEvent.SU,
-                    data: self.routerData
-                    )
+                self.appState.susiState = self.controller.gotoSignUpView(state: self.appState.susiState)
              }) {
                  Text("Create an account")
              }
@@ -37,21 +34,20 @@ struct SusiView: View {
                     .offset(y: 230)
                 
                 Button(action: {
-                    self.eventReducer.dispatch(e: SusiEvent.SI, data: self.routerData)
+                    self.appState.susiState = self.controller.gotoSignInView(state: self.appState.susiState)
                 }) {
                 Text("Log in")
                 }.offset(y: 230)
             }
         }
-        
     }
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct SusiView_Previews: PreviewProvider {
     static var previews: some View {
         SusiView()
-        .environmentObject(RouterData())
+        .environmentObject(AppState())
     }
 }
 #endif

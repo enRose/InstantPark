@@ -8,16 +8,19 @@
 
 import SwiftUI
 
-struct Si: View {
+struct SiView: View {
     var body: some View {
-        Text("Hello Si")
+        
+        VStack {
+            Text("Hello Si")
+        }
     }
 }
 
 #if DEBUG
-struct Si_Previews: PreviewProvider {
+struct SiView_Previews: PreviewProvider {
     static var previews: some View {
-        Si()
+        SiView()
     }
 }
 #endif

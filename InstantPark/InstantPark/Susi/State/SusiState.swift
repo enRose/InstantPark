@@ -9,8 +9,11 @@
 import SwiftUI
 import Combine
 
-final class RouterData: ObservableObject  {
-    @Published var showSI = false
-    @Published var showSU = false
-    @Published var showSUSI = true
+class SusiState  {
+    var showSI = false
+    var showSU = false
+    var showSUSI = true
+    var username = ""
+    var email = ""
+    var pw = ""
 }
